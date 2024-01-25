@@ -4,7 +4,7 @@ var hamiltonCounty = ee.FeatureCollection('TIGER/2018/Counties')
       ee.Filter.eq('STATEFP', '20') // '20' is the FIPS code for Kansas
   ));
 
-var image2 = ee.Image('projects/ee-hamara/assets/1989')
+var image = ee.Image('projects/ee-hamara/assets/88test')
 
 // Short wave infrared band
 var SWIR = {bands: 'B5',
@@ -14,4 +14,4 @@ var SWIR = {bands: 'B5',
 };
 
 Map.centerObject(hamiltonCounty, 8)
-Map.addLayer(image, SWIR, 'LANDSAT') ));
+Map.addLayer(image, SWIR, 'LANDSAT');
