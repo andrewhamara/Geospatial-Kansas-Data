@@ -11,3 +11,5 @@ Once you create an image variable and run analyze.js, with the image variable li
 var image = ee.Image('projects/<your_username>/assets/id_of_image')
 
 EE will ask you whether you would like to import the image rather than treat it as a variable. To this, you should agree, and thus the image variables will not be declared in the analysis scripts, you will have to create your own.
+
+Right now, the only data I've found that contains Hamilton county, KS has been Landsat 4 and beyond. (1982+)
